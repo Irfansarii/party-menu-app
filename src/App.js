@@ -10,12 +10,33 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState('STARTER');
   const [searchTerm, setSearchTerm] = useState('');
   const [vegOnly, setVegOnly] = useState(false);
+  const [nonVegOnly, setNonVegOnly] = useState(false);
   const [selectedDishes, setSelectedDishes] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentDish, setCurrentDish] = useState(null);
 
   // Available meal categories
   const categories = ['STARTER', 'MAIN COURSE', 'DESSERT', 'SIDES'];
+
+  // Function to get count of dishes in each category
+  const getCategoryCount = (category) => {
+    return dishes.filter(dish => {
+      const matchesCategory = dish.mealType === category;
+      const matchesSearch = dish.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                           dish.description.toLowerCase().includes(searchTerm.toLowerCase());
+      
+      let matchesVegFilter = true;
+      if (vegOnly && nonVegOnly) {
+        matchesVegFilter = true;
+      } else if (vegOnly) {
+        matchesVegFilter = dish.type === 'VEG';
+      } else if (nonVegOnly) {
+        matchesVegFilter = dish.type === 'NON-VEG';
+      }
+      
+      return matchesCategory && matchesSearch && matchesVegFilter;
+    }).length;
+  };
 
   // Filtering logic
   const filteredDishes = dishes.filter(dish => {
@@ -26,8 +47,19 @@ function App() {
     const matchesSearch = dish.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          dish.description.toLowerCase().includes(searchTerm.toLowerCase());
     
-    // Filter by vegetarian option
-    const matchesVegFilter = !vegOnly || dish.type === 'VEG';
+    // Filter by vegetarian/non-vegetarian option
+    let matchesVegFilter = true;
+    if (vegOnly && nonVegOnly) {
+      // If both are selected, show all dishes
+      matchesVegFilter = true;
+    } else if (vegOnly) {
+      // Only veg dishes
+      matchesVegFilter = dish.type === 'VEG';
+    } else if (nonVegOnly) {
+      // Only non-veg dishes
+      matchesVegFilter = dish.type === 'NON-VEG';
+    }
+    // If neither is selected, show all dishes
     
     return matchesCategory && matchesSearch && matchesVegFilter;
   });
@@ -80,6 +112,9 @@ function App() {
           onSearchChange={setSearchTerm}
           vegOnly={vegOnly}
           onVegFilterChange={setVegOnly}
+          nonVegOnly={nonVegOnly}
+          onNonVegFilterChange={setNonVegOnly}
+          getCategoryCount={getCategoryCount}
         />
 
         <DishList

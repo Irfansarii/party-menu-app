@@ -7,7 +7,10 @@ function Filters({
   searchTerm, 
   onSearchChange, 
   vegOnly, 
-  onVegFilterChange 
+  onVegFilterChange,
+  nonVegOnly,
+  onNonVegFilterChange,
+  getCategoryCount
 }) {
   const handleSearchChange = (e) => {
     onSearchChange(e.target.value);
@@ -15,6 +18,10 @@ function Filters({
 
   const handleVegFilterChange = (e) => {
     onVegFilterChange(e.target.checked);
+  };
+
+  const handleNonVegFilterChange = (e) => {
+    onNonVegFilterChange(e.target.checked);
   };
 
   const handleCategoryClick = (category) => {
@@ -57,10 +64,10 @@ function Filters({
               type="button"
             >
               <span className="category-icon">
-                {category === 'STARTER' && '🥗'}
-                {category === 'MAIN COURSE' && '🍛'}
-                {category === 'DESSERT' && '🍰'}
-                {category === 'SIDES' && '🍚'}
+                {category === 'STARTER'}
+                {category === 'MAIN COURSE'}
+                {category === 'DESSERT'}
+                {category === 'SIDES'}
               </span>
               <span className="category-name">{category}</span>
             </button>
@@ -80,8 +87,22 @@ function Filters({
             />
             <span className="checkbox-custom"></span>
             <span className="filter-text">
-              <span className="veg-icon">🌱</span>
               Vegetarian Only
+            </span>
+          </label>
+        </div>
+        
+        <div className="veg-filter">
+          <label className="veg-filter-label">
+            <input
+              type="checkbox"
+              checked={nonVegOnly}
+              onChange={handleNonVegFilterChange}
+              className="veg-checkbox"
+            />
+            <span className="checkbox-custom"></span>
+            <span className="filter-text">
+              Non-Vegetarian Only
             </span>
           </label>
         </div>
