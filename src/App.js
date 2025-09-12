@@ -138,6 +138,17 @@ function App() {
           onClose={closeIngredientModal}
         />
       )}
+
+      <footer className="footer">
+        <div className="footer-content">
+          <div className="total-selected">
+            Total Dish Selected: {selectedDishes.length}
+          </div>
+          <button className="continue-btn">
+            Continue
+          </button>
+        </div>
+      </footer>
     </div>
   );
 }

@@ -16,12 +16,12 @@ function Filters({
     onSearchChange(e.target.value);
   };
 
-  const handleVegFilterChange = (e) => {
-    onVegFilterChange(e.target.checked);
+  const handleVegFilterChange = () => {
+    onVegFilterChange(!vegOnly);
   };
 
-  const handleNonVegFilterChange = (e) => {
-    onNonVegFilterChange(e.target.checked);
+  const handleNonVegFilterChange = () => {
+    onNonVegFilterChange(!nonVegOnly);
   };
 
   const handleCategoryClick = (category) => {
@@ -77,34 +77,26 @@ function Filters({
 
       {/* Vegetarian Filter */}
       <div className="filter-options">
-        <div className="veg-filter">
-          <label className="veg-filter-label">
-            <input
-              type="checkbox"
-              checked={vegOnly}
-              onChange={handleVegFilterChange}
-              className="veg-checkbox"
-            />
-            <span className="checkbox-custom"></span>
-            <span className="filter-text">
-              Vegetarian Only
-            </span>
-          </label>
+        <div className="veg-filter" onClick={handleVegFilterChange}>
+          <div className={`toggle-slider ${vegOnly ? 'active' : ''}`}>
+            <div className="slider-track">
+              <div className="slider-thumb"></div>
+            </div>
+          </div>
+          <span className="filter-text">
+            Veg
+          </span>
         </div>
         
-        <div className="veg-filter">
-          <label className="veg-filter-label">
-            <input
-              type="checkbox"
-              checked={nonVegOnly}
-              onChange={handleNonVegFilterChange}
-              className="veg-checkbox"
-            />
-            <span className="checkbox-custom"></span>
-            <span className="filter-text">
-              Non-Vegetarian Only
-            </span>
-          </label>
+        <div className="veg-filter" onClick={handleNonVegFilterChange}>
+          <div className={`toggle-slider non-veg ${nonVegOnly ? 'active' : ''}`}>
+            <div className="slider-track">
+              <div className="slider-thumb"></div>
+            </div>
+          </div>
+          <span className="filter-text">
+            Non-Veg
+          </span>
         </div>
       </div>
     </div>
