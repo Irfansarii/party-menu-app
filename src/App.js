@@ -90,6 +90,11 @@ function App() {
   // Get selected dishes count
   const selectedCount = selectedDishes.length;
 
+  // Convert selected dish IDs to dish objects for Filters component
+  const selectedDishObjects = selectedDishes.map(dishId => 
+    dishes.find(dish => dish.id === dishId)
+  ).filter(Boolean);
+
   return (
     <div className="App">
       <header className="app-header">
@@ -115,6 +120,7 @@ function App() {
           nonVegOnly={nonVegOnly}
           onNonVegFilterChange={setNonVegOnly}
           getCategoryCount={getCategoryCount}
+          selectedDishes={selectedDishObjects}
         />
 
         <DishList

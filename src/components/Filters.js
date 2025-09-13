@@ -10,7 +10,8 @@ function Filters({
   onVegFilterChange,
   nonVegOnly,
   onNonVegFilterChange,
-  getCategoryCount
+  getCategoryCount,
+  selectedDishes
 }) {
   const handleSearchChange = (e) => {
     onSearchChange(e.target.value);
@@ -26,6 +27,11 @@ function Filters({
 
   const handleCategoryClick = (category) => {
     onCategoryChange(category);
+  };
+
+  // Get selected dishes count for a specific category
+  const getCategorySelectedCount = (category) => {
+    return selectedDishes.filter(dish => dish.mealType === category).length;
   };
 
   return (
@@ -70,6 +76,7 @@ function Filters({
                 {category === 'SIDES'}
               </span>
               <span className="category-name">{category}</span>
+              <span className="category-count">({getCategorySelectedCount(category)})</span>
             </button>
           ))}
         </div>

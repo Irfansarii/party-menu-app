@@ -50,8 +50,8 @@ function DishCard({ dish, isSelected, onToggleSelection, onShowIngredients }) {
           >
             {isSelected ? (
               <>
-                <span className="check-icon">✓</span>
-                Selected
+                <span className="remove-icon">−</span>
+                Remove
               </>
             ) : (
               <>

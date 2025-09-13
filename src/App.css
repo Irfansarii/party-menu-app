@@ -187,6 +187,13 @@ body {
   font-size: 0.9rem;
 }
 
+.category-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #28a745;
+  margin-left: 0.3rem;
+}
+
 .category-tab:hover {
   border-color: #667eea;
   transform: translateY(-2px);
@@ -546,11 +553,15 @@ body {
 }
 
 .selection-btn.selected {
-  background: #28a745;
+  background: #dc3545;
   color: white;
 }
 
-.check-icon, .plus-icon {
+.selection-btn.selected:hover {
+  background: #c82333;
+}
+
+.check-icon, .plus-icon, .remove-icon {
   font-size: 0.8rem;
   font-weight: bold;
 }
