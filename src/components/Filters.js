@@ -39,14 +39,15 @@ function Filters({
       {/* Search Bar */}
       <div className="search-section">
         <div className="search-container">
-          <span className="search-icon">🔍</span>
           <input
             type="text"
-            placeholder="Search dishes..."
+            placeholder="Search dish for your party...."
             value={searchTerm}
             onChange={handleSearchChange}
             className="search-input"
           />
+          <span className="search-icon">🔍</span>
+
           {searchTerm && (
             <button 
               className="clear-search"
@@ -82,28 +83,35 @@ function Filters({
         </div>
       </div>
 
-      {/* Vegetarian Filter */}
-      <div className="filter-options">
-        <div className="veg-filter" onClick={handleVegFilterChange}>
-          <div className={`toggle-slider ${vegOnly ? 'active' : ''}`}>
-            <div className="slider-track">
-              <div className="slider-thumb"></div>
-            </div>
-          </div>
-          <span className="filter-text">
-            Veg
-          </span>
+      {/* Category Info and Filters in one line */}
+      <div className="category-filters-row">
+        <div className="selected-category-info">
+          <span className="selected-category-name">{selectedCategory} SELECTED</span>
+          <span className="selected-category-count">({getCategorySelectedCount(selectedCategory)})</span>
         </div>
         
-        <div className="veg-filter" onClick={handleNonVegFilterChange}>
-          <div className={`toggle-slider non-veg ${nonVegOnly ? 'active' : ''}`}>
-            <div className="slider-track">
-              <div className="slider-thumb"></div>
+        <div className="filter-options-inline">
+          <div className="veg-filter" onClick={handleVegFilterChange}>
+            <div className={`toggle-slider ${vegOnly ? 'active' : ''}`}>
+              <div className="slider-track">
+                <div className="slider-thumb"></div>
+              </div>
             </div>
+            <span className="filter-text">
+              Veg
+            </span>
           </div>
-          <span className="filter-text">
-            Non-Veg
-          </span>
+          
+          <div className="veg-filter" onClick={handleNonVegFilterChange}>
+            <div className={`toggle-slider non-veg ${nonVegOnly ? 'active' : ''}`}>
+              <div className="slider-track">
+                <div className="slider-thumb"></div>
+              </div>
+            </div>
+            <span className="filter-text">
+              Non-Veg
+            </span>
+          </div>
         </div>
       </div>
     </div>

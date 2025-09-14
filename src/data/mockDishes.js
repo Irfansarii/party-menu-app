@@ -6,7 +6,7 @@ export const dishes = [
     "mealType": "STARTER",
     "type": "VEG",
     "description": "Marinated paneer cubes grilled to perfection with aromatic spices.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Paneer+Tikka",
+    "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -32,7 +32,7 @@ export const dishes = [
     "mealType": "STARTER",
     "type": "VEG",
     "description": "Crispy rolls filled with fresh vegetables and served with sweet chili sauce.",
-    "image": "https://placehold.co/300x200/90EE90/2F4F2F?text=Spring+Rolls",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 3,
       "name": "Chinese",
@@ -59,7 +59,7 @@ export const dishes = [
     "mealType": "STARTER",
     "type": "NON-VEG",
     "description": "Spicy buffalo chicken wings with tangy sauce.",
-    "image": "https://placehold.co/300x200/FF6347/8B0000?text=Chicken+Wings",
+    "image": "https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 2,
       "name": "Continental",
@@ -85,7 +85,7 @@ export const dishes = [
     "mealType": "STARTER",
     "type": "NON-VEG",
     "description": "Crispy battered fish strips served with tartar sauce.",
-    "image": "https://placehold.co/300x200/87CEEB/4682B4?text=Fish+Fingers",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 2,
       "name": "Continental",
@@ -112,7 +112,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -138,7 +138,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Rich and creamy black lentils cooked with butter and cream.",
-    "image": "https://placehold.co/300x200/8B4513/FFFFFF?text=Dal+Makhani",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -164,7 +164,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Fragrant basmati rice cooked with mixed vegetables and aromatic spices.",
-    "image": "https://placehold.co/300x200/FFD700/8B4513?text=Veg+Biryani",
+    "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -191,7 +191,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "NON-VEG",
     "description": "Tender chicken in rich tomato-based creamy sauce.",
-    "image": "https://placehold.co/300x200/FF6347/8B0000?text=Butter+Chicken",
+    "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -217,7 +217,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "NON-VEG",
     "description": "Aromatic basmati rice layered with spiced chicken and cooked to perfection.",
-    "image": "https://placehold.co/300x200/FFD700/8B4513?text=Chicken+Biryani",
+    "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -243,7 +243,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "NON-VEG",
     "description": "Fresh fish cooked in coconut-based spicy curry.",
-    "image": "https://placehold.co/300x200/87CEEB/4682B4?text=Fish+Curry",
+    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 4,
       "name": "South Indian",
@@ -270,7 +270,7 @@ export const dishes = [
     "mealType": "DESSERT",
     "type": "VEG",
     "description": "Soft milk dumplings soaked in rose-flavored sugar syrup.",
-    "image": "https://placehold.co/300x200/8B4513/FFFFFF?text=Gulab+Jamun",
+    "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 5,
       "name": "Indian Sweets",
@@ -296,7 +296,7 @@ export const dishes = [
     "mealType": "DESSERT",
     "type": "VEG",
     "description": "Rich and fudgy chocolate brownies with nuts.",
-    "image": "https://placehold.co/300x200/8B4513/FFFFFF?text=Chocolate+Brownie",
+    "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 2,
       "name": "Continental",
@@ -322,7 +322,7 @@ export const dishes = [
     "mealType": "DESSERT",
     "type": "VEG",
     "description": "Traditional Indian ice cream with cardamom and pistachios.",
-    "image": "https://placehold.co/300x200/F5F5DC/8B4513?text=Kulfi",
+    "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 5,
       "name": "Indian Sweets",
@@ -349,7 +349,7 @@ export const dishes = [
     "mealType": "SIDES",
     "type": "VEG",
     "description": "Soft and fluffy Indian bread baked in tandoor.",
-    "image": "https://placehold.co/300x200/F5DEB3/8B4513?text=Naan",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -375,7 +375,7 @@ export const dishes = [
     "mealType": "SIDES",
     "type": "VEG",
     "description": "Fragrant basmati rice cooked with cumin seeds.",
-    "image": "https://placehold.co/300x200/F5F5DC/8B4513?text=Jeera+Rice",
+    "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -401,7 +401,7 @@ export const dishes = [
     "mealType": "SIDES",
     "type": "VEG",
     "description": "Refreshing yogurt-based side dish with cucumber and onions.",
-    "image": "https://placehold.co/300x200/F0F8FF/4682B4?text=Mixed+Raita",
+    "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -427,7 +427,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+9",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -453,7 +453,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+10",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -479,7 +479,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+11",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -505,7 +505,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+12",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -531,7 +531,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+13",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -557,7 +557,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+14",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -583,7 +583,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+15",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -609,7 +609,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+16",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -635,7 +635,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+17",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -661,7 +661,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+18",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -687,7 +687,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+19",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -713,7 +713,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+20",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -739,7 +739,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+21",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -765,7 +765,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+22",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -791,7 +791,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+23",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -817,7 +817,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+24",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -843,7 +843,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+25",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -869,7 +869,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+26",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -895,7 +895,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+27",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -921,7 +921,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+28",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -947,7 +947,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+29",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",
@@ -973,7 +973,7 @@ export const dishes = [
     "mealType": "MAIN COURSE",
     "type": "VEG",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-    "image": "https://placehold.co/300x200/F7D0B3/422402?text=Kadhai+Paneer+30",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=200&fit=crop&crop=center",
     "category": {
       "id": 1,
       "name": "North Indian",

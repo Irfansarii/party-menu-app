@@ -10,57 +10,49 @@ function DishCard({ dish, isSelected, onToggleSelection, onShowIngredients }) {
   };
 
   return (
-    <div className={`dish-card ${isSelected ? 'selected' : ''}`}>
-      <div className="dish-image-container">
-        <img 
-          src={dish.image} 
-          alt={dish.name}
-          className="dish-image"
-          loading="lazy"
-        />
-        <div className="dish-type-badge">
-          <span className={`type-indicator ${dish.type.toLowerCase()}`}>
-            {dish.type === 'VEG' ? '🌱' : '🍖'}
-          </span>
-          <span className="type-text">{dish.type}</span>
-        </div>
-      </div>
-      
-      <div className="dish-content">
-        <div className="dish-header">
-          <h3 className="dish-name">{dish.name}</h3>
-          <span className="meal-type-tag">{dish.mealType}</span>
+    <div className={`dish-card-new ${isSelected ? 'selected' : ''}`}>
+      <div className="dish-info">
+        <div className="dish-header-new">
+          <h3 className="dish-name-new">{dish.name}</h3>
+          <div className="dish-type-indicator">
+            <span className={`type-badge-new ${dish.type.toLowerCase()}`}>
+              {dish.type === 'VEG' ? '🟢' : '🔴'}
+            </span>
+          </div>
         </div>
         
-        <p className="dish-description">{dish.description}</p>
+        <p className="dish-description-new">
+          {dish.description.length > 80 ? `${dish.description.substring(0, 80)}...` : dish.description}
+          {dish.description.length > 80 && (
+            <span className="read-more"> Read more</span>
+          )}
+        </p>
         
-        <div className="dish-actions">
+        <div className="dish-actions-new">
           <button 
-            className="ingredients-btn"
+            className="ingredients-btn-new"
             onClick={handleShowIngredients}
             type="button"
           >
-            📋 View Ingredients
-          </button>
-          
-          <button 
-            className={`selection-btn ${isSelected ? 'selected' : ''}`}
-            onClick={handleSelectionToggle}
-            type="button"
-          >
-            {isSelected ? (
-              <>
-                <span className="remove-icon">−</span>
-                Remove
-              </>
-            ) : (
-              <>
-                <span className="plus-icon">+</span>
-                Add to Menu
-              </>
-            )}
+            🧄 Ingredient
           </button>
         </div>
+      </div>
+      
+      <div className="dish-image-section">
+        <img 
+          src={dish.image} 
+          alt={dish.name}
+          className="dish-image-new"
+          loading="lazy"
+        />
+        <button 
+          className={`add-btn-new ${isSelected ? 'selected' : ''}`}
+          onClick={handleSelectionToggle}
+          type="button"
+        >
+          {isSelected ? '−' : 'Add +'}
+        </button>
       </div>
     </div>
   );
