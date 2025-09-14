@@ -100,12 +100,12 @@ function App() {
       <header className="app-header">
         <h1>🎉 Party Menu Selection</h1>
         <p>Choose your favorite dishes for the perfect party!</p>
-        {selectedCount > 0 && (
+        {/* {selectedCount > 0 && (
           <div className="selected-counter">
             <span className="counter-badge">{selectedCount}</span>
             <span>dishes selected</span>
           </div>
-        )}
+        )} */}
       </header>
 
       <main className="app-main">

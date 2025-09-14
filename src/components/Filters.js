@@ -77,7 +77,7 @@ function Filters({
                 {category === 'SIDES'}
               </span>
               <span className="category-name">{category}</span>
-              <span className="category-count">({getCategorySelectedCount(category)})</span>
+              <span className="category-count">{getCategorySelectedCount(category)}</span>
             </button>
           ))}
         </div>
@@ -87,7 +87,7 @@ function Filters({
       <div className="category-filters-row">
         <div className="selected-category-info">
           <span className="selected-category-name">{selectedCategory} SELECTED</span>
-          <span className="selected-category-count">({getCategorySelectedCount(selectedCategory)})</span>
+          <span className="selected-category-count">{getCategorySelectedCount(selectedCategory)}</span>
         </div>
         
         <div className="filter-options-inline">
