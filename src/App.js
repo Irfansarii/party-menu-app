@@ -87,8 +87,7 @@ function App() {
     setCurrentDish(null);
   };
 
-  // Get selected dishes count
-  const selectedCount = selectedDishes.length;
+  // Get selected dishes count (used in footer)
 
   // Convert selected dish IDs to dish objects for Filters component
   const selectedDishObjects = selectedDishes.map(dishId => 
